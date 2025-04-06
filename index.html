@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Motaz Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('OasisUrbTH.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .profile img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .profile p {
+      max-width: 600px;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .project {
+      width: 300px;
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 100%;
+      height: auto;
+      cursor: pointer;
+    }
+
+    .project h3 {
+      padding: 15px;
+      background-color: #222;
+      color: white;
+      margin: 0;
+    }
+
+    .contact {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #222;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #444;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Motaz's Architecture Portfolio</h1>
+    <p>Innovative Designs | Thoughtful Spaces</p>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome</h1>
+    <p>Explore my selected architecture works</p>
+  </section>
+
+  <section class="profile">
+    <img src="mii.jpg" alt="Motaz Portrait">
+    <p>Hello, I’m Motaz — a passionate architecture student who creates conceptual and emotional spaces that challenge perception and push design boundaries. I believe architecture is a tool to shape experience, memory, and meaning.</p>
+  </section>
+
+  <section class="gallery">
+    <div class="project">
+      <a href="OasisUrbPA.pdf" target="_blank">
+        <img src="OasisUrbTH.jpg" alt="Oasis Urban Thumbnail">
+      </a>
+      <h3>Oasis Urb</h3>
+    </div>
+    <div class="project">
+      <a href="learningcenterPA.pdf" target="_blank">
+        <img src="learningcenterTH.jpg" alt="Learning Center Thumbnail">
+      </a>
+      <h3>Learning Center</h3>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Motaz Portfolio</p>
+  </footer>
+
+</body>
+</html>
